@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { yellowgreen } from 'color-name';
 
 class CounterButton extends Component {
     constructor() {
@@ -22,9 +23,8 @@ class CounterButton extends Component {
     }
 
     render() {
-        console.log('CounterButton');
         return (
-            <button color={this.props.color} onClick={this.updateCount} >
+            <button style={{marginBottom: 8, backgroundColor: yellowgreen}} color={this.props.color} onClick={this.updateCount} >
                 Count: {this.state.count}
             </button>
         );
